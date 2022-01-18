@@ -5,6 +5,26 @@ A practical JSON parser written in awk.
 
 [https://github.com/step-/JSON.awk](https://github.com/step-/JSON.awk)
 
+In My(td-shi) usage
+-------------------
+
+~~~sh
+$ cat tes.json  | awk -f json.awk --posix - | sed 's/^\[\(.*\)\]\t\(.*\)$/\1\t\2/g'
+"name"	"Alice Brown"
+"sku"	"54321"
+"price"	199.95
+"shipTo","name"	"Bob Brown"
+"shipTo","address"	"456 Oak Lane"
+"shipTo","city"	"Pretendville"
+"shipTo","state"	"HI"
+"shipTo","zip"	"98999"
+"billTo","name"	"Alice Brown"
+"billTo","address"	"456 Oak Lane"
+"billTo","city"	"Pretendville"
+"billTo","state"	false
+"billTo","zip"	"98999"
+~~~
+
 Introduction
 ------------
 
