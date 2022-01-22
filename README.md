@@ -10,19 +10,19 @@ In My(td-shi) usage
 
 ~~~sh
 $ cat tes.json  | awk -f json.awk --posix - | sed  -e 's/^"//' -e 's/\([^\\]\)"/\1/g'
-"name"	"Alice Brown"
-"sku"	"54321"
-"price"	199.95
-"shipTo" "name"	"Bob Brown"
-"shipTo" "address"	"456 Oak Lane"
-"shipTo" "city"	"Pretendville"
-"shipTo" "state"	"HI"
-"shipTo" "zip"	"98999"
-"billTo" "name"	"Alice Brown"
-"billTo" "address"	"456 Oak Lane"
-"billTo" "city"	"Pretendville"
-"billTo" "state"	false
-"billTo" "zip"	"98999"
+name	Alice Brown
+sku	54321
+price	199.95
+shipTo name	Bob Brown
+shipTo address	456 Oak Lane
+shipTo city	Pretendville
+shipTo state	HI
+shipTo zip	98999"
+billTo name	Alice Brown
+billTo address	456 Oak Lane
+billTo city	Pretendville
+billTo state	false
+billTo zip	98999
 ~~~
 
 Introduction
