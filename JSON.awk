@@ -90,7 +90,7 @@ function append_jpath_component(jpath, component) { #{{{1
 	if (0 == STREAM) {
 		return cb_append_jpath_component(jpath, component)
 	} else {
-		return (jpath != "" ? jpath "," : "") component
+		return (jpath != "" ? jpath " " : "") component
 	}
 }
 
@@ -98,7 +98,7 @@ function append_jpath_value(jpath, value) { #{{{1
 	if (0 == STREAM) {
 		return cb_append_jpath_value(jpath, value)
 	} else {
-		return sprintf("[%s]\t%s", jpath, value)
+		return sprintf("%s\t%s", jpath, value)
 	}
 }
 
